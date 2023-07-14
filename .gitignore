@@ -1,0 +1,15 @@
+application.yml
+HELP.md
+target
+**/target
+**/maven-wrapper.jar
+**/maven-wrapper.properties
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.idea
+*.iws
+*.iml
+*.ipr
+
+
