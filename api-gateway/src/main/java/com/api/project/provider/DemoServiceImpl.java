@@ -27,8 +27,8 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public String sayHello(String name) {
-        log.info("Hello " + name + ", request from consumer: " + RpcContext.getContext().getRemoteAddress());
-        return "Hello " + name;
+        log.info("Hello1 " + name + ", request from consumer: " + RpcContext.getContext().getRemoteAddress());
+        return "Hello1 " + name;
     }
 
     @Override

@@ -1,6 +1,5 @@
 package com.api.gateway;
 
-import com.api.project.provider.DemoService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
@@ -22,7 +21,7 @@ import org.springframework.stereotype.Service;
 public class ApiGatewayApplication {
 
     @DubboReference
-    private DemoService demoService;
+    private com.api.project.provider.DemoService demoService;
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(ApiGatewayApplication.class, args);

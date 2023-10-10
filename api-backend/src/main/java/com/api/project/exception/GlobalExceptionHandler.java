@@ -1,17 +1,18 @@
-package com.api.apiinterface.exception;
+package com.api.project.exception;
 
-import com.api.apiinterface.common.BaseResponse;
-import com.api.apiinterface.common.ErrorCode;
-import com.api.apiinterface.common.ResultUtils;
+import com.api.project.common.BaseResponse;
+import com.api.project.common.ErrorCode;
+import com.api.project.common.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.NoHandlerFoundException;
+
 import javax.servlet.http.HttpServletRequest;
+
 
 /**
  * 全局异常处理器
@@ -55,3 +56,4 @@ public class GlobalExceptionHandler {
     }
 
 }
+
